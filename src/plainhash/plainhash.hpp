@@ -148,7 +148,10 @@ namespace ucsb::plain
         data_json.close();
     }
 
-    inline void plainhash_t::close() { save_as_json(); }
+    inline void plainhash_t::close()
+    {
+        // save_as_json();
+    }
 
     inline operation_result_t plainhash_t::upsert(key_t key, value_spanc_t value)
     {
